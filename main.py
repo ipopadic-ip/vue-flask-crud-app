@@ -6,7 +6,7 @@ import pymysql
 app = Flask(__name__, static_url_path="/")
 mysql = MySQL(app, cursorclass=pymysql.cursors.DictCursor)
 
-app.config["MYSQL_DATABASE_USER"] = "root"
+app.config["MYSQL_DATABASE_USER"] = "***"
 app.config["MYSQL_DATABASE_PASSWORD"] = "***"
 app.config["MYSQL_DATABASE_DB"] = "prodavnica"
 
