@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="scripts/vue.global.js"></script>
+    <script src="scripts/vue-router.js"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <div id="app">
+        <ul>
+            <li><router-link to="/">Početna stranica</router-link></li>
+            <li><router-link to="/tabelaKupci">Prikaz Kupaca</router-link></li>
+            <li><router-link to="/proizvodForma">Dodavanje/izmena proizvoda</router-link></li>
+            <li><router-link to="/kupacForma">Dodavanje/izmena kupca</router-link></li>
+        </ul>
+        
+        <router-view></router-view>
+        <!-- <primer-komponente poruka="TEST" @klik="ispis($event)"></primer-komponente>
+
+        <forma @sacuvaj="dodajStudenta($event)" :student="noviStudent"></forma>
+        <tabela :studenti="studenti" @izmena="postaviZaIzmenu($event)" @brisanje="ukloniStudenta($event.id)"></tabela> -->
+    </div>
+    <script src="scripts/app.js" type="module"></script>
+</body>
+
+</html>
